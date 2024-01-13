@@ -34,6 +34,9 @@ font-weight: 700;
     padding: 20px 24px;
     border: none;
   }
+  h2,h3,h4{
+    margin: 0;
+  }
 
 /* Header Section Styles */
 header {
@@ -111,7 +114,54 @@ font-weight: 700;
 }
 
 /* Feature Section Styles */
-.
+.feature{
+    margin-top: 70px;
+    display: flex;
+}
+.feature-content{
+    padding-right: 146px;
+}
+.feature-title{
+    padding-left: 10px;
+    border-left:5px solid #FF900E;
+}
+.ticket-title{
+    color: #131313;
+font-size: 1.5rem;
+font-weight: 600;
+}
+.ticket{
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.ft-btn{
+    position: relative;
+    bottom: 100px;
+    right: 100px;
+    padding: 43px;
+}
+.btn-title{
+    color: #FFF;
+text-align: center;
+font-size: 4rem;
+font-weight: 700;
+}
+.feature-img{
+    padding: 0 auto;
+    margin: 0 auto;
+}
+.feature-img img{
+    width: 100%;
+}
+.feature-img p{
+    color: #FFF;
+font-size: 1.5rem;
+font-weight: 500;
+margin: 0;
+}
 
 /* Responsiveness for small devices */
 @media screen and (max-width:576px) {
@@ -127,5 +177,21 @@ font-weight: 700;
     }
     .team-work-img-container{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .feature{
+        flex-direction: column;
+       padding: 0 10px;
+    }
+    .feature-content{
+        padding: 20px;
+    }
+    .feature-img {
+        margin: 0 auto;
+        width: 85vw;
+    }
+    .ft-btn{
+        position: static;
+        width: 100%;
+
     }
 }

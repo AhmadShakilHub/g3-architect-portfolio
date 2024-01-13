@@ -11,18 +11,31 @@ body {
 }
 main {
   max-width: 1440px;
-  margin: 0 20px;
-  border: 5px dotted brown;
+  margin: 0 auto;
+}
+.titles{
+    color:  #131313;
+font-size: 2.8rem;
+font-weight: 700;
 }
 .description {
   color: #727272;
-  text-align: center;
   font-size: 1rem;
   font-weight: 400;
   line-height: 26px; /* 162.5% */
 }
+.btn-primary {
+    color: #fff;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    background: #ff900e;
+    padding: 20px 24px;
+    border: none;
+  }
 
-/* Header section styles */
+/* Header Section Styles */
 header {
   padding: 10px 240px;
   background: rgba(255, 144, 14, 0.1);
@@ -50,7 +63,8 @@ nav {
   margin-bottom: 70px;
 }
 .banner-content{ 
-    margin-bottom: 50px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 .banner-title {
   color: #131313;
@@ -58,20 +72,46 @@ nav {
   font-size: 4rem;
   font-weight: 700;
 }
-.btn-primary {
-  color: #fff;
-  text-align: center;
-  font-size: 1.25rem;
-  font-weight: 600;
-  border-radius: 8px;
-  background: #ff900e;
-  padding: 20px 24px;
-  border: none;
+.banner-btn{
+    margin-bottom: 40px;
 }
 .banner-img img{
     width: 100%;
 }
 
+/* Team Work Section Styles */
+
+.team-work{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    margin-top: 70px;
+    
+}
+.team-work-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.team-work-content{
+    padding: 0 70px;
+}
+.team-work-title{
+    margin: 0;
+}
+.ql{
+    color:  #727272;
+font-size: 2.8rem;
+font-weight: 500;
+}
+.feat{
+    color: #FF900E;
+font-size: 2.8rem;
+font-weight: 700;
+}
+
+/* Feature Section Styles */
+.
 
 /* Responsiveness for small devices */
 @media screen and (max-width:576px) {
@@ -81,5 +121,11 @@ nav {
     nav{
     flex-direction: column;
     }  
-    
+    .team-work{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .team-work-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
